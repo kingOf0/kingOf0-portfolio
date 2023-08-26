@@ -1,0 +1,25 @@
+@media screen and (max-width: 1300px) {
+    .reference img {
+        display: none;
+    }
+}
+
+.reference {
+    border: 0.1rem solid white;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.reference h1 {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.reference p {
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,134 @@
+*, html {
+    background-color: #211f1f;
+}
+
+@media screen and (max-width: 1300px) {
+    .yaesol {
+        display: none;
+    }
+
+    .content {
+        min-height: 100vh;
+        display: grid;
+
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "title"
+        "text"
+        "text";
+    }
+
+    .footer-child {
+        width: 100%;
+        left: 50% !important;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .yaesol {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+
+        color: white;
+        height: fit-content;
+
+        overflow: hidden;
+    }
+
+}
+
+.yaesol {
+    z-index: 100;
+}
+
+
+@media screen and (min-width: 1300px) {
+    .content {
+        min-height: 100vh;
+        display: grid;
+
+        grid-template-columns: 25vi 75vi;
+        grid-template-rows: auto;
+        grid-template-areas:
+    "logo title"
+    "logo text"
+    "logo text";
+    }
+}
+
+.footer-parent {
+    position: relative;
+    height: 100px;
+
+    background-color: transparent;
+
+    margin: auto;
+}
+
+.footer-child {
+    background-color: transparent;
+
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+.footer-child p {
+    background-color: transparent;
+}
+
+.title {
+    grid-area: title;
+    color: white;
+
+    margin: 0 auto auto;
+}
+
+.about-me .title {
+    margin: 50px auto auto;
+}
+
+.text {
+    grid-area: text;
+
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    height: fit-content;
+
+
+    overflow: hidden;
+}
+
+
+.text-item {
+    margin: 1rem 0 1rem 0;
+    padding: 1rem;
+
+    border: hsla(180, 0%, 48%, 0.4) solid 1px;
+    border-radius: 0.5rem;
+
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 800ms;
+}
+
+.text-item > div {
+    overflow: hidden;
+    min-height: 2rem;
+}
+
+.text-item:hover {
+    grid-template-rows: 1fr;
+}
