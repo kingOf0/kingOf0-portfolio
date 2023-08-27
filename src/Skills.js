@@ -12,7 +12,6 @@ import react from "./icon/icons8-react.svg";
 import webstorm from "./icon/icons8-webstorm.svg";
 import kotlin from "./icon/icons8-kotlin.svg";
 import React from "react";
-import {Animator, MoveIn, Sticky, FadeIn, Fade, FadeOut} from "react-scroll-motion";
 
 export function Skills() {
     return <div className="content">
@@ -21,14 +20,12 @@ export function Skills() {
         </div>
         <div className="text w-75 m-auto">
             <Container>
-                <Animator animation={FadeIn()}>
-                    <Row>
-                        <Col className="d-flex"><img className="mx-auto" src={android} alt="android"/></Col>
-                        <Col className="d-flex"><img className="mx-auto" src={intellij} alt="intellij"/></Col>
-                        <Col className="d-flex"><img className="mx-auto" src={arduino} alt="arduino"/></Col>
-                        <Col className="d-flex"><img className="mx-auto" src={git} alt="git"/></Col>
-                    </Row>
-                </Animator>
+                <Row>
+                    <Col className="d-flex"><img className="mx-auto" src={android} alt="android"/></Col>
+                    <Col className="d-flex"><img className="mx-auto" src={intellij} alt="intellij"/></Col>
+                    <Col className="d-flex"><img className="mx-auto" src={arduino} alt="arduino"/></Col>
+                    <Col className="d-flex"><img className="mx-auto" src={git} alt="git"/></Col>
+                </Row>
                 <Row>
                     <Col className="d-flex"><img className="mx-auto" src={github} alt="github"/></Col>
                     <Col className="d-flex"><img className="mx-auto" src={pycharm} alt="pycharm"/></Col>
